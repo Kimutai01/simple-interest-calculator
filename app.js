@@ -20,6 +20,16 @@ function calculateResults(e){
     let inter=(intr/100) * amou;
     alert(inter)
 
+    let totPay = (amou+ inter);
+    alert(totPay)
+
+    let monPay = (totPay/year)
+    alert(monPay)
+
+    monthlyPay.value = monPay;
+    totalPay.value = totPay;
+    totalInt.value = inter;
+
 
    
 
