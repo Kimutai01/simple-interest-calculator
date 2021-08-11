@@ -1,37 +1,32 @@
 document.getElementById('form-group').addEventListener('submit', calculateResults);
 
-function calculateResults(e){
-    let amount =document.getElementById('amount');
-    let interest =document.getElementById('interest');
+function calculateResults(e) {
+    let amount = document.getElementById('amount');
+    let interest = document.getElementById('interest');
     let time = document.getElementById('years');
     let monthlyPay = document.getElementById('monthly-payment');
     let totalPay = document.getElementById('total-payment');
-    let totalInt =document.getElementById('total-interest')
+    let totalInt = document.getElementById('total-interest')
 
     let amou = parseInt(amount.value)
-    alert(amou)
+
 
     let intr = parseInt(interest.value);
-    alert(intr)
 
     let year = parseInt(years.value)
-    alert(year)
 
-    let inter=(intr/100) * amou;
-    alert(inter)
+    let inter = (intr / 100) * amou;
 
-    let totPay = (amou+ inter);
-    alert(totPay)
+    let totPay = (amou + inter);
 
-    let monPay = (totPay/year)
-    alert(monPay)
+    let monPay = (totPay / year)
 
-    monthlyPay.value = monPay;
-    totalPay.value = totPay;
-    totalInt.value = inter;
+    monthlyPay.value = monPay.toFixed(2);
+    totalPay.value = totPay.toFixed(2);
+    totalInt.value = inter.toFixed(2);
 
 
-   
+
 
     e.preventDefault()
 }
