@@ -30,3 +30,13 @@ function calculateResults(e) {
 
     e.preventDefault()
 }
+
+$(document).ready(function(){
+    $('#button').click(function(){
+        $('.result').fadeIn()
+        setTimeout(fadeOut, 8000)
+        function fadeOut(){
+            $('.result').fadeOut().empty()
+        }
+    })
+})

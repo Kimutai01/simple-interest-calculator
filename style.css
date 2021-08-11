@@ -1,3 +1,7 @@
 .card{
     width: 400px;
 }
+
+.result{
+    display: none;
+}
