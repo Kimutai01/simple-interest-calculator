@@ -25,6 +25,43 @@ function calculateResults(e) {
     totalPay.value = totPay.toFixed(2);
     totalInt.value = inter.toFixed(2);
 
+    if(isNaN(amou) && isNaN(intr) && isNaN(year)){
+       alert('please enter amount, interest and time')
+       $(document).ready(function(){
+           $('.result').hide()
+       })
+    }else if(isNaN(amou) && isNaN(intr)){
+        alert('please enter amount and interest')
+        $(document).ready(function(){
+            $('.result').hide()
+        })
+    }else if(isNaN(amou) && isNaN(year)){
+        alert('please enter amount and year')
+        $(document).ready(function(){
+            $('.result').hide()
+        })
+    }else if(isNaN(intr) && isNaN(year)){
+        alert('please enter interest and year')
+        $(document).ready(function(){
+            $('.result').hide()
+        })
+    }else if(isNaN(year)){
+        alert('please enter year')
+        $(document).ready(function(){
+            $('.result').hide()
+        })
+    }else if(isNaN(amou)){
+        alert('please enter amount')
+        $(document).ready(function(){
+            $('.result').hide()
+        })
+    } else if(isNaN(intr)){
+        alert('please enter interest')
+        $(document).ready(function(){
+            $('.result').hide()
+        })
+    }
+
 
 
 
@@ -37,6 +74,7 @@ $(document).ready(function(){
         setTimeout(fadeOut, 8000)
         function fadeOut(){
             $('.result').fadeOut().empty()
+
         }
     })
 })
