@@ -2,7 +2,7 @@
 Kiprotich Kimutai
 # project description
 it is a website which when you enter the loan amount,interest rate and the repayment period will give you the monthly payment, total interest and total amount
-# {Pizza king application}
+# {Loan calculator application}
 #### {It is a web application for simple interest loan calculator}, {2021}
 #### By **{Kiprotich Kimutai}**
 ## Description
