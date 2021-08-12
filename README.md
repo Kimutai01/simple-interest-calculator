@@ -10,7 +10,7 @@ it is a website which when you enter the loan amount,interest rate and the repay
 ## Setup/Installation Requirements
  Fork or clone the repository
  ```
-$ git clone https://github.com/Kimutai01/pizza-king.git
+$ git clone https://github.com/Kimutai01/simple-interest-calculator.git
  ```
 * open with your favorite editor
 * open with liveServer
